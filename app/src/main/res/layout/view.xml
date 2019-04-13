@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="411dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="410dp"
+            android:layout_height="91dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="112dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="60dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/id"
+                android:layout_toRightOf="@+id/id"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/names"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/name"
+                android:layout_toEndOf="@+id/name"
+                android:layout_toRightOf="@+id/name"
+          />
+
+            <TextView
+                android:id="@+id/Etswing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignStart="@+id/name"
+                android:layout_alignLeft="@+id/name"
+
+                android:layout_marginTop="20dp"
+
+                android:text="age"
+                android:layout_toStartOf="@+id/names"
+                android:layout_toLeftOf="@+id/names" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/Etswing"
+
+                android:layout_alignEnd="@+id/names"
+                android:layout_alignRight="@+id/names"
+
+                android:layout_toEndOf="@+id/Etswing"
+                android:layout_toRightOf="@+id/Etswing"
+            />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
